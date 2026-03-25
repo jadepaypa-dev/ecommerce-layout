@@ -3,67 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className="bg-white shadow-md py-2 px-6 sticky top-0">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Image
-            src="/logo/lb-apparel-logo.jpg"
-            alt="LB Apparel Logo"
-            width={80}
-            height={50}
-            className="object-contain"
-          />
-          <div className="flex gap-5 items-center">
-            <nav className="hidden md:flex space-x-8">
-              <a
-                href="/"
-                className="text-gray-700 hover:text-gray-900 font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="/collections"
-                className="text-gray-700 hover:text-gray-900 font-medium"
-              >
-                Collections
-              </a>
-              <a
-                href="/community"
-                className="text-gray-700 hover:text-gray-900 font-medium"
-              >
-                Community
-              </a>
-              <a
-                href="/about"
-                className="text-gray-700 hover:text-gray-900 font-medium"
-              >
-                About Us
-              </a>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <button className="text-gray-700 hover:text-gray-900">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="flex-1 pb-12 pt-4 px-6 h-[calc(100vh-64px)] overflow-y-auto snap-y snap-proximity scroll-smooth">
+      <main className="flex-1 px-6 h-[calc(100vh-64px)]">
         <section
           aria-label="hero-section"
-          className="snap-center h-full flex items-center border-2 border-red-500"
+          className="snap-center h-[calc(100vh-64px)] flex pt-4"
         >
           <div className="max-w-7xl mx-auto">
             <div className="w-full">
@@ -126,7 +69,7 @@ export default function Home() {
 
         <section
           aria-label="Collection carousel"
-          className="snap-center h-full flex items-center py-10 border-2 border-red-500"
+          className="snap-center h-[calc(100vh-64px)] flex items-center py-10"
         >
           <div className="max-w-7xl mx-auto">
             <div className="w-full">
@@ -183,7 +126,7 @@ export default function Home() {
 
         <section
           aria-label="Customer reviews"
-          className="snap-center h-full flex bg-gray-50 px-5 py-10 items-center border-2 border-red-500"
+          className="snap-center h-[calc(100vh-64px)] flex bg-gray-50 px-5 py-10 items-center"
         >
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col gap-20 w-full ">
@@ -250,7 +193,7 @@ export default function Home() {
 
         <section
           aria-label="About us"
-          className="snap-center h-full flex items-center py-10 border-2 border-red-500"
+          className="snap-center h-[calc(100vh-64px)] flex items-center py-10"
         >
           <div className="max-w-7xl mx-auto">
             <div className="w-full">
@@ -294,41 +237,40 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-
-      <footer className="bg-gray-800 text-white py-8 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="font-semibold mb-4">Contact Us</h3>
-            <p>Email: info@bikeshop.com</p>
-            <p>Phone: (123) 456-7890</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Store Location</h3>
-            <p>123 Bike Street</p>
-            <p>City, State 12345</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">
-                Facebook
-              </a>
-              <a href="#" className="hover:text-gray-300">
-                Instagram
-              </a>
-              <a href="#" className="hover:text-gray-300">
-                Twitter
-              </a>
+        <footer className="bg-gray-800 text-white py-8 px-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-semibold mb-4">Contact Us</h3>
+              <p>Email: info@bikeshop.com</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Store Location</h3>
+              <p>123 Bike Street</p>
+              <p>City, State 12345</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a href="#" className="hover:text-gray-300">
+                  Facebook
+                </a>
+                <a href="#" className="hover:text-gray-300">
+                  Instagram
+                </a>
+                <a href="#" className="hover:text-gray-300">
+                  Twitter
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">About</h3>
+              <p>Your trusted bike shop for quality gear and accessories.</p>
+              <p className="mt-4">&copy; 2026 Bikeshop. All rights reserved.</p>
             </div>
           </div>
-          <div>
-            <h3 className="font-semibold mb-4">About</h3>
-            <p>Your trusted bike shop for quality gear and accessories.</p>
-            <p className="mt-4">&copy; 2026 Bikeshop. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </main>
     </>
   );
 }
